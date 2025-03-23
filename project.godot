@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="fluffy-octo-disco"
+run/main_scene="uid://csx8qediwvndq"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 

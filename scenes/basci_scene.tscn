@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://csx8qediwvndq"]
+
+[ext_resource type="Script" uid="uid://dy26viqao62jt" path="res://scripts/test_script.gd" id="1_w1vjx"]
+[ext_resource type="Texture2D" uid="uid://bos8moxygcgfa" path="res://icon.svg" id="2_lshi3"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Node2D" type="Node2D" parent="." node_paths=PackedStringArray("expected_child")]
+position = Vector2(390, 221)
+rotation = -2.03395
+scale = Vector2(5.29139, -0.844944)
+script = ExtResource("1_w1vjx")
+expected_child = NodePath("../Sprite2D")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(228, 120)
+texture = ExtResource("2_lshi3")
+region_rect = Rect2(5, 5, 5, 5)
